@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pet Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; 
+            color: #333;
+            min-height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            flex-direction: column; /* Ensure footer is at the bottom */
+        }
+        .container {
+            max-width: 800px; /* Adjust maximum width */
+            margin: 0 auto;
+            padding: 10px; /* Adjust padding */
+        }
+        header {
+            background-color: #874097;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: center;
+            padding: 40px 20px;
+            flex: 1; /* Take remaining vertical space */
+        }
+        main h2 {
+            font-size: 28px;
+            color: #af4caf;
+        }
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .pet-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .pet-info .pet-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .pet-info .pet-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed; /* Fixed position at the bottom */
+            bottom: 0;
+            width: 100%;
+        }
+        footer .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .container p {
+            margin: 0;
+            margin-top: 10px; /* Adjust spacing between text and line */
+            position: relative;
+        }
+        footer .container p::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -5px;
+            left: 25%;
+        }
+        footer .container img {
+            height: 20px; /* Adjust image height as needed */
+            vertical-align: middle; /* Align image vertically with text */
+            margin-left: 5px; /* Adjust spacing between text and image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Pet Paradise</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pets.html">Available Pets</a></li>
+                    <li><a href="adoption.html">Adoption Process</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Find Your Perfect Pet</h2>
+            <p>Welcome to Pet Paradise! We have a wide variety of pets available for adoption. Explore our website to find your new furry friend.</p>
+
+            <div class="pet-info">
+                <div class="pet-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0491/1821/6344/files/nova-scotia-duck-tolling-retriever.jpg?v=1628638284" alt="Buddy">
+                    <h3>Buddy</h3>
+                    <p>Type: Dog</p>
+                    <p>Age: 2 years</p>
+                    <p>Price: $500</p>
+                </div>
+                <div class="pet-item">
+                    <img src="https://media.istockphoto.com/id/1483360428/photo/cute-young-tabby-cat-playing-in-a-garden.jpg?s=1024x1024&w=is&k=20&c=saHzHnfuuHQ8hYo0nIevXsuDFJegDnmroDaafN2WfG0=" alt="Whiskers">
+                    <h3>Whiskers</h3>
+                    <p>Type: Cat</p>
+                    <p>Age: 3 years</p>
+                    <p>Price: $300</p>
+                </div>
+                <!-- Add more pet items as needed -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pet Paradise. All rights reserved.<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Circle-question.svg/1200px-Circle-question.svg.png" alt="Copyright symbol"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Buying Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pet Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoption.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <h2>Available Pets</h2>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search for pets...">
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <!-- Add more options as needed -->
+            </select>
+            <button onclick="filterPets()">Search</button>
+        </div>
+        <div class="pet-listing" id="pet-listing">
+            <!-- Pet listings will go here -->
+            <div class="pet-item">
+                <img src="https://cdn.shopify.com/s/files/1/0491/1821/6344/files/nova-scotia-duck-tolling-retriever.jpg?v=1628638284" alt="Buddy">
+                <h3>Buddy</h3>
+                <p>Type: Dog</p>
+                <p>Age: 2 years</p>
+                <p>Price: $500</p>
+            </div>
+            <div class="pet-item">
+                <img src="https://media.istockphoto.com/id/1483360428/photo/cute-young-tabby-cat-playing-in-a-garden.jpg?s=1024x1024&w=is&k=20&c=saHzHnfuuHQ8hYo0nIevXsuDFJegDnmroDaafN2WfG0=" alt="Whiskers">
+                <h3>Whiskers</h3>
+                <p>Type: Cat</p>
+                <p>Age: 3 years</p>
+                <p>Price: $300</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pet Haven</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
